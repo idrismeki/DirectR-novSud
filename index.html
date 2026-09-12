@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Entreprise Bâtiment TCE - Expert Tout Corps d'État</title>
+  <link rel="stylesheet" href="css/future.css" />
+</head>
+<body>
+  <!-- HEADER - Point focal supérieur gauche -->
+  <header>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="image/logo1.png" alt="TCE Logo" />
+      </div>
+      <div class="company-info">
+        <h1>TCE Bâtiment</h1>
+        <span class="tagline">Expert Tout Corps d'État</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- CTA primaire - Point focal supérieur droit -->
+    <div class="header-cta">
+      <a href="tel:+33123456789" class="cta-phone">📞 06 14 69 47 45 </a>
+      <button onclick="scrollToContact()" class="cta-primary">Demander un devis </button>
+    </div>
+  </header>
+
+  <!-- HERO - Message principal avec CTA -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <h2>Transformons votre habitat en <span class="highlight">espace de rêve</span></h2>
+        <p class="hero-description">
+          <strong>30 ans d'expertise</strong> en rénovation complète : maçonnerie, électricité, 
+          plomberie, carrelage. De la conception à la finition.
+        </p>
+        <div class="hero-benefits">
+          <div class="benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Demander un devis</span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Artisans qualifiés</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <button onclick="scrollToContact()" class="cta-primary-large">
+            Demander mon devis
+          </button>
+          <a href="tel:+33123456789" class="cta-secondary">
+            Appel immédiat
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image">
+          <img src="image/toillet après.jpg" alt="Rénovation de qualité" />
+          <div class="hero-badge">
+            <span>Plus de 500</span>
+            <span>projets réalisés</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES - Grille scannable -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <h2>Nos Expertises</h2>
+      <p class="section-subtitle">Tous corps d'état pour votre projet </p>
+    </div>
+    
+    <div class="services-grid">
+
+
+      <div class="service-card">
+        <div class="service-icon">🔌</div>
+        <h3>Électricité</h3>
+        <p>Installation et mise aux normes électriques</p>
+        <ul class="service-list">
+          <li>Tableau électrique</li>
+          <li>Éclairage LED</li>
+          <li>Prises et interrupteurs</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚿</div>
+        <h3>Plomberie</h3>
+        <p>Réseaux d'eau et installations sanitaires</p>
+        <ul class="service-list">
+          <li>Salle de bain complète</li>
+          <li>Chauffe-eau</li>
+          <li>Évacuations</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Maçonnerie</h3>
+        <p>Construction et aménagement structural</p>
+        <ul class="service-list">
+          <li>Murs et cloisons</li>
+          <li>Extensions</li>
+          <li>Fondations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉALISATIONS - Preuves visuelles avec CTA -->
+  <section id="realisations" class="realisations-section">
+    <div class="section-header">
+      <h2>Nos Réalisations</h2>
+      <p class="section-subtitle">Découvrez nos transformations avant/après</p>
+    </div>
+
+    <div class="before-after-container">
+      <!-- Rénovation Toilettes -->
+      <div class="before-after-card">
+        <div class="comparison-slider" data-card="toilettes">
+          <img src="image/toillet.png" alt="toilettes avant rénovation" class="before-image">
+          <img src="image/toillet après.jpg" alt="toilettes après rénovation" class="after-image">
+          <div class="comparison-labels">
+            <span class="label active" data-view="before">Avant</span>
+            <span class="label" data-view="after">Après</span>
+          </div>
+          <div class="project-duration">
+            <span>⏱️ 3 jours</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Rénovation Toilettes Complète</h3>
+          <p>Transformation totale avec carrelage moderne, nouvelles installations Wc suspendu et installations d'une douchette.</p>
+          <div class="project-details">
+          
+            <span class="project-location">📍 Marseille 13ème</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rénovation Salle de Bain -->
+      <div class="before-after-card">
+        <div class="comparison-slider" data-card="salle-bain">
+          <img src="image/salle de bain.jpg" alt="Salle de bain avant" class="before-image">
+          <img src="image/salle de bain après.jpg" alt="Salle de bain après" class="after-image">
+          <div class="comparison-labels">
+            <span class="label active" data-view="before">Avant</span>
+            <span class="label" data-view="after">Après</span>
+          </div>
+          <div class="project-duration">
+            <span>⏱️ 5 jours</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Salle de Bain Moderne</h3>
+          <p>Création d'une douche italienne, meuble vasque design et éclairage LED intégré.</p>
+          <div class="project-details">
+            <span class="project-location">📍 Marseille 15ème</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA après réalisations -->
+    <div class="section-cta">
+      <h3>Votre projet mérite la même attention</h3>
+      <p>Rejoignez nos 500+ clients satisfaits</p>
+      <button onclick="scrollToContact()" class="cta-primary-large">
+        Lancer mon projet
+      </button>
+    </div>
+  </section>
+  <!-- CONTACT - CTA final (point focal inférieur droit) -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>Démarrons votre projet</h2>
+        <p class="contact-intro">
+          <strong>Demander votre devis</strong> - Nous vous rappelons dans l'heure
+        </p>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Appelez-nous</strong>
+              <p> 06 14 69 47 45</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>direct.renovation@hotmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Zone d'intervention</strong>
+              <p>Marseille et Bouches-du-Rhône </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form onsubmit="submitForm(event)" class="contact-form">
+          <h3>Demande de devis gratuit</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Votre nom *" required />
+            <input type="tel" placeholder="Téléphone *" required />
+          </div>
+          <input type="email" placeholder="Email *" required />
+          <select required>
+            <option value="">Type de projet *</option>
+            <option value="renovation-complete">Rénovation complète</option>
+            <option value="salle-de-bain">Salle de bain</option>
+            <option value="cuisine">Cuisine</option>
+            <option value="electricite">Électricité</option>
+            <option value="plomberie">Plomberie</option>
+            <option value="facade">Façade</option>
+            <option value="autre">Autre</option>
+          </select>
+          <textarea placeholder="Décrivez votre projet..." rows="4" required></textarea>
+          <button type="submit" class="cta-primary-large">
+            Recevoir mon devis
+          </button>
+          <p class="form-note">
+           ✓ Aucun engagement
+          </p>
+        </form>
+      </div>
+    </div>
+    
+    <p class="success-message" id="successMsg">
+      ✅ Merci ! Nous vous contactons sous 24h pour votre devis gratuit.
+    </p>
+  </section>
+
+  <!-- FOOTER - Informations légales -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="image/logo.png" alt="TCE Logo" />
+          </div>
+          <div>
+            <strong>TCE Bâtiment</strong>
+            <p>Expert Tout Corps d'État</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2025 Entreprise Bâtiment TCE. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/index.js"></script>
+</body>
+</html>
